@@ -58,6 +58,7 @@ function setMarginsImages() {
       $(this).css('margin', '0 60px 55px 0');
     }
   });
+  console.log('Test Test');
 }
 
 function setMarginsVideos() {
@@ -115,6 +116,7 @@ $('#galleryContainer a').on('click', function(event) {
   $title.text(titleText);
   //Show the overlay
   $overlay.show();
+  $('body').addClass('noscroll');
 });
 
 
@@ -122,10 +124,12 @@ $('#galleryContainer a').on('click', function(event) {
 //When X or image is clicked close overlay
 $closeButton.on('click', function() {
   $overlay.fadeOut();
+  $('body').removeClass('noscroll');
 });
 
 
 //CLICK GALLERY
+
 // function that returns the current image Object based on the src
 function findImage(arrayOfObjects, src) {
   for (var i = 0; i < arrayOfObjects.length; i++) {
@@ -219,5 +223,5 @@ $('input').on('keyup', function() {
 
 //---- On Page Load ----//
 
-setMarginsImages();
-setMarginsVideos();
+$(window).load(setMarginsImages);
+$(window).load(setMarginsVideos);
