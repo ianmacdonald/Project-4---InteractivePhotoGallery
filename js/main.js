@@ -58,7 +58,6 @@ function setMarginsImages() {
       $(this).css('margin', '0 60px 55px 0');
     }
   });
-  console.log('Test Test');
 }
 
 function setMarginsVideos() {
