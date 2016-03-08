@@ -1,0 +1,68 @@
+/* Main Styles */
+
+body {
+	background: #D2D2D2;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	width: 1260px;
+	margin: 0 auto;
+	padding-top: 25px;
+	height: 60px;
+	background: #fff;
+}
+
+header.sticky {
+	position: fixed;
+    top: 0;
+    left: 50%;
+    width: 1260px;
+    height: 70px;
+    margin: 0 0 0 -630px;
+    padding-top: 9px;
+    background-color: #FFF;
+    opacity: 0.95;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 3px 10px -4px #656565;
+}
+
+h3 {
+	margin-bottom: 25px;
+}
+
+iframe {
+    border: none;
+}
+
+/* Search Bar */
+
+input[type="text"] {
+    border: 2px solid #e5e5e5;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #888;
+    font-size: 16px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 490px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 1em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 1em;
+}

@@ -1,0 +1,31 @@
+#nextButton,
+#prevButton {
+    position: absolute;
+    top: 45%;
+    z-index: 1000;
+    opacity: .7;
+}
+
+#prevButton {
+	left: 3%;
+}
+
+#nextButton {
+	right: 3%;
+}
+
+.closeButton {
+	position: absolute;
+	right: 1%;
+	top: 2%;
+	opacity: .7;
+	padding: 2px;
+	border: 2px solid #eee;
+    border-radius: 50%;
+}
+
+.closeButton:hover,
+#nextButton:hover,
+#prevButton:hover {
+	opacity: 1;
+}

@@ -131,6 +131,9 @@ $closeButton.on('click', function() {
 
 // function that returns the current image Object based on the src
 function findImage(arrayOfObjects, src) {
+
+  // find a way to use .filter()
+
   for (var i = 0; i < arrayOfObjects.length; i++) {
     var result = arrayOfObjects[i].src.indexOf(src);
     if (result > -1) {
